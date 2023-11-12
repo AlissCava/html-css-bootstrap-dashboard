@@ -24,6 +24,7 @@
 #logo{
     display: none;
 }
+
 header i{
     margin-left: 10px;
     margin-right: 10px;
@@ -79,24 +80,26 @@ header i{
 
 .col-destra{
     padding: 0%;
-    background-color: burlywood;
+    background-color: rgb(245, 245, 245);
     min-height: 200px;
 }
 
 .col-sinistra{
     padding: 0%;
-    background-color: darksalmon;
+    background-color: rgb(245, 245, 245);
     min-height: 200px;
 }
 
+
 .card{
-    background-color: lightgreen;
+
     width: 80%;
     height: 300px;
     margin: 0 auto;
     border-radius: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
+    border-color: transparent;
 }
 
 .faq-card{
@@ -108,7 +111,12 @@ header i{
 }
 
 .todo-card{
-    height: 100px;
+    height: 150px;
+}
+
+.todo-card h1, 
+.class-card h1{
+    background-color: rgb(245, 245, 245);
 }
 
 .graphic-card{
