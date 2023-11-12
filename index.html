@@ -16,7 +16,20 @@
     <body>
         <header>
             <div id="header">
+                
+                <img id="logo" src="img/logo.svg" alt="">
+                <img id="mobile-logo" 
+                src="img/mobile-logo.png" alt="">
 
+                <form class="container-fluid">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </form>
+                  <i class="fa-solid fa-bars"></i>
+                  <i class="fa-solid fa-circle-question"></i>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <i class="fa-solid fa-bell" style="color: #ffb43f;"></i>
             </div>
         </header>
 
@@ -25,14 +38,40 @@
             <div id="general-container">
                 <div id="wrap-up">
                     <div id="lateral-navbar">
-
+                        <div class="menu select-menu">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </div>
+    
+                        <div class="menu unselect-menu">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span>Stat</span>
+                        </div>
+                        
+                        <div class="menu unselect-menu">
+                            <i class="fa-solid fa-signal"></i>
+                            <span>Signal</span>
+                        </div>
                     </div>
 
                     <div id="main-content">
-                        <div id="up-navbar"></div>
-                    </div>
-                </div>
-            </div>
+                        <div id="up-navbar">
+                           
+                        </div>
+
+                        <div class="row general-row">
+                            <div class="col-12 col-md-8 col-sinistra">
+                                <div class="card class-card"></div>
+                                <div class="card faq-card"></div>
+                            </div>
+                            <div class="col-12 col-md-4 col-destra">
+                                <div class="card todo-card"></div>
+                                <div class="card graphic-card"></div>
+                            </div>
+                        </div> <!-- chiusursa general row -->
+                    </div>  <!-- chiusura mian content -->                
+                </div>  <!-- chiusura wrap up -->    
+            </div>  <!-- chiusura general container -->
         </main>
 
         <footer>
