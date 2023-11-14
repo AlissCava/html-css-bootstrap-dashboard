@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -29,8 +29,20 @@
                   <i class="fa-solid fa-bars"></i>
                   <i class="fa-solid fa-circle-question"></i>
                   <i class="fa-solid fa-ellipsis-vertical"></i>
-                  <i class="fa-solid fa-bell" style="color: #ffb43f;"></i>
+
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle buttom-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bell" style="color: #ffd877;"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
             </div>
+                
         </header>
 
         <main>
@@ -56,202 +68,261 @@
 
                     <div id="main-content">
                         <div id="up-navbar">
-                            
+                            <div id="parte1-upnav">
+                                <h2>Nuovo studente</h2>
+                            <!-- boostrap -->
+                            <!-- non capisco come metterlo di lato -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary buttontrasparent" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                                <i class="fa-regular fa-square-plus"></i>
+                            </button>
+
+                        
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="mb-3">
+                                        <h3>nuovo studente</h3>
+                                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                      </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                         
                         </div>
+                        <div id="parte2-upnav">
+                            <span> Booleam <button type="button" class="btn btn-primary">Piano blaze</button></span>
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="#"><button type="button" class="btn btn-primary">3app</button></a></li>
+                                  <li class="breadcrumb-item active" aria-current="page"><button type="button" class="btn btn-primary">+</button></li>
+                                </ol>
+                              </nav>
+                        </div>
+                        <div id="parte3-upnav">
+                            <p>studenti online negli ultimi 30min</p>
+                            <h1>125</h1>
+                        </div>
+                        
+                    </div>        
 
                         <div class="row general-row">
-                            <div class="col-12 col-md-8 col-sinistra">
-                                <div class="card class-card">
-                                    <h1>Prossime classi</h1>
-                                    <!-- boostrap -->
-                                    <ul class="list-group">
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                            <div>  
-                                                <span>nome</span>
-                                            </div>
-                   
-                                            <div>
-                                                <span class=" list-prossime class-mobile-none">data inizio</span>
-                                                <span class=" list-prossime  class-mobile-none">ROI</span>
-                                                <span class="list-prossime ">Stato</span>
-                                                <span class="list-prossime ">azioni</span>     
-                                            </div>
-                                        </li>
+                        <div class="col-12 col-md-8 col-sinistra">
+                            <div class="card class-card">
+                                <h1>Prossime classi</h1>
+                                <!-- boostrap -->
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>  
+                                            <span>nome</span>
+                                        </div>
+                
+                                        <div>
+                                            <span class=" list-prossime class-mobile-none">data inizio</span>
+                                            <span class=" list-prossime  class-mobile-none">ROI</span>
+                                            <span class="list-prossime ">Stato</span>
+                                            <span class="list-prossime ">azioni</span>     
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
                                         
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                         
-                                            <div>  
-                                                <i class="fa-solid fa-code"></i>
-                                                <span>classe N</span>
-                                            </div>
-                   
-                                            <div>
-                                                <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
-                                                <span class="list-prossime  class-mobile-none">20%</span>
-                                                <span class="list-prossime badge bg-primary rounded-pill">Done</span>
-                                                <span>
-                                                    <i class="list-prossime fa-solid fa-pencil"></i>
-                                                    <i class="list-prossime fa-solid fa-trash"></i>
-                                                </span>     
-                                            </div>
+                                        <div>  
+                                            <i class="fa-solid fa-code"></i>
+                                            <span>classe N</span>
+                                        </div>
+                
+                                        <div>
+                                            <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
+                                            <span class="list-prossime  class-mobile-none">20%</span>
+                                            <span class="list-prossime badge bg-primary rounded-pill">Done</span>
+                                            <span>
+                                                <i class="list-prossime fa-solid fa-pencil"></i>
+                                                <i class="list-prossime fa-solid fa-trash"></i>
+                                            </span>     
+                                        </div>
 
-                                            
-                                        </li>
+                                        
+                                    </li>
 
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                         
-                                            <div>  
-                                                <i class="fa-solid fa-code"></i>
-                                                <span>classe N</span>
-                                            </div>
-                   
-                                            <div>
-                                                <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
-                                                <span class="list-prossime  class-mobile-none">20%</span>
-                                                <span class="list-prossime badge bg-primary rounded-pill">Done</span>
-                                                <span>
-                                                    <i class="list-prossime fa-solid fa-pencil"></i>
-                                                    <i class="list-prossime fa-solid fa-trash"></i>
-                                                </span>     
-                                            </div>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        
+                                        <div>  
+                                            <i class="fa-solid fa-code"></i>
+                                            <span>classe N</span>
+                                        </div>
+                
+                                        <div>
+                                            <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
+                                            <span class="list-prossime  class-mobile-none">20%</span>
+                                            <span class="list-prossime badge bg-primary rounded-pill">Done</span>
+                                            <span>
+                                                <i class="list-prossime fa-solid fa-pencil"></i>
+                                                <i class="list-prossime fa-solid fa-trash"></i>
+                                            </span>     
+                                        </div>
 
-                                            
-                                        </li>
-                                       
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                         
-                                            <div>  
-                                                <i class="fa-solid fa-code"></i>
-                                                <span>classe N</span>
-                                            </div>
-                   
-                                            <div>
-                                                <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
-                                                <span class="list-prossime  class-mobile-none">20%</span>
-                                                <span class="list-prossime badge bg-primary rounded-pill">Done</span>
-                                                <span>
-                                                    <i class="list-prossime fa-solid fa-pencil"></i>
-                                                    <i class="list-prossime fa-solid fa-trash"></i>
-                                                </span>     
-                                            </div>
+                                        
+                                    </li>
+                                    
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        
+                                        <div>  
+                                            <i class="fa-solid fa-code"></i>
+                                            <span>classe N</span>
+                                        </div>
+                
+                                        <div>
+                                            <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
+                                            <span class="list-prossime  class-mobile-none">20%</span>
+                                            <span class="list-prossime badge bg-primary rounded-pill">Done</span>
+                                            <span>
+                                                <i class="list-prossime fa-solid fa-pencil"></i>
+                                                <i class="list-prossime fa-solid fa-trash"></i>
+                                            </span>     
+                                        </div>   
+                                    </li>
+                
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">      
+                                        <div>  
+                                            <i class="fa-solid fa-code"></i>
+                                            <span>classe N</span>
+                                        </div>
+                
+                                        <div>
+                                            <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
+                                            <span class="list-prossime  class-mobile-none">20%</span>
+                                            <span class="list-prossime badge bg-primary rounded-pill">Done</span>
+                                            <span>
+                                                <i class="list-prossime fa-solid fa-pencil"></i>
+                                                <i class="list-prossime fa-solid fa-trash"></i>
+                                            </span>     
+                                        </div>
+                                    </li>
 
-                                            
-                                        </li>
-                                       
-                                       
-                                       
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                         
-                                            <div>  
-                                                <i class="fa-solid fa-code"></i>
-                                                <span>classe N</span>
-                                            </div>
-                   
-                                            <div>
-                                                <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
-                                                <span class="list-prossime  class-mobile-none">20%</span>
-                                                <span class="list-prossime badge bg-primary rounded-pill">Done</span>
-                                                <span>
-                                                    <i class="list-prossime fa-solid fa-pencil"></i>
-                                                    <i class="list-prossime fa-solid fa-trash"></i>
-                                                </span>     
-                                            </div>
-
-                                            
-                                        </li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                         
-                                            <div>  
-                                                <i class="fa-solid fa-code"></i>
-                                                <span>classe N</span>
-                                            </div>
-                   
-                                            <div>
-                                                <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
-                                                <span class="list-prossime  class-mobile-none">20%</span>
-                                                <span class="list-prossime badge bg-primary rounded-pill">Done</span>
-                                                <span>
-                                                    <i class="list-prossime fa-solid fa-pencil"></i>
-                                                    <i class="list-prossime fa-solid fa-trash"></i>
-                                                </span>     
-                                            </div>
-
-                                            
-                                        </li>
-                                       
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                         
-                                            <div>  
-                                                <i class="fa-solid fa-code"></i>
-                                                <span>classe N</span>
-                                            </div>
-                   
-                                            <div>
-                                                <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
-                                                <span class="list-prossime  class-mobile-none">20%</span>
-                                                <span class="list-prossime badge bg-primary rounded-pill">Done</span>
-                                                <span>
-                                                    <i class="list-prossime fa-solid fa-pencil"></i>
-                                                    <i class="list-prossime fa-solid fa-trash"></i>
-                                                </span>     
-                                            </div>
-
-                                            
-                                        </li>
-                                       
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                         
-                                            <div>  
-                                                <i class="fa-solid fa-code"></i>
-                                                <span>classe N</span>
-                                            </div>
-                   
-                                            <div>
-                                                <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
-                                                <span class="list-prossime  class-mobile-none">20%</span>
-                                                <span class="list-prossime badge bg-primary rounded-pill">Done</span>
-                                                <span>
-                                                    <i class="list-prossime fa-solid fa-pencil"></i>
-                                                    <i class="list-prossime fa-solid fa-trash"></i>
-                                                </span>     
-                                            </div>
-
-                                            
-                                        </li>
-                                       
-                                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                                         
-                                            <div>  
-                                                <i class="fa-solid fa-code"></i>
-                                                <span>classe N</span>
-                                            </div>
-                   
-                                            <div>
-                                                <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
-                                                <span class="list-prossime  class-mobile-none">20%</span>
-                                                <span class="list-prossime badge bg-primary rounded-pill">Done</span>
-                                                <span>
-                                                    <i class="list-prossime fa-solid fa-pencil"></i>
-                                                    <i class="list-prossime fa-solid fa-trash"></i>
-                                                </span>     
-                                            </div>
-
-                                            
-                                        </li>
-                                       
-                                       
-                                       
-                                       
-                                      </ul>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        
+                                        <div>  
+                                            <i class="fa-solid fa-code"></i>
+                                            <span>classe N</span>
+                                        </div>
+                
+                                        <div>
+                                            <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
+                                            <span class="list-prossime  class-mobile-none">20%</span>
+                                            <span class="list-prossime badge bg-primary rounded-pill">Done</span>
+                                            <span>
+                                                <i class="list-prossime fa-solid fa-pencil"></i>
+                                                <i class="list-prossime fa-solid fa-trash"></i>
+                                            </span>     
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        
+                                        <div>  
+                                            <i class="fa-solid fa-code"></i>
+                                            <span>classe N</span>
+                                        </div>
+                
+                                        <div>
+                                            <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
+                                            <span class="list-prossime  class-mobile-none">20%</span>
+                                            <span class="list-prossime badge bg-primary rounded-pill">Done</span>
+                                            <span>
+                                                <i class="list-prossime fa-solid fa-pencil"></i>
+                                                <i class="list-prossime fa-solid fa-trash"></i>
+                                            </span>     
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        
+                                        <div>  
+                                            <i class="fa-solid fa-code"></i>
+                                            <span>classe N</span>
+                                        </div>
+                
+                                        <div>
+                                            <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
+                                            <span class="list-prossime  class-mobile-none">20%</span>
+                                            <span class="list-prossime badge bg-primary rounded-pill">Done</span>
+                                            <span>
+                                                <i class="list-prossime fa-solid fa-pencil"></i>
+                                                <i class="list-prossime fa-solid fa-trash"></i>
+                                            </span>     
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        
+                                        <div>  
+                                            <i class="fa-solid fa-code"></i>
+                                            <span>classe N</span>
+                                        </div>
+                
+                                        <div>
+                                            <span class="list-prossime  class-mobile-none"> GG/MM/AA</span>
+                                            <span class="list-prossime  class-mobile-none">20%</span>
+                                            <span class="list-prossime badge bg-primary rounded-pill">Done</span>
+                                            <span>
+                                                <i class="list-prossime fa-solid fa-pencil"></i>
+                                                <i class="list-prossime fa-solid fa-trash"></i>
+                                            </span>     
+                                        </div> 
+                                    </li>
+                                    </ul>
                                 </div>
                                 <div class="card faq-card">
                                     <h1>F.A.Q.</h1>
                                     <!-- boostrap -->
-                                    <ul class="list-group">
-                                        <li class="list-group-item">domanda 1</li>
-                                        <li class="list-group-item">domanda 2</li>
-                                        <li class="list-group-item">domanda 3</li>
-                                    </ul>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                              Domanda1
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, a possimus itaque rerum cum tenetur. Tenetur nam ipsum impedit explicabo voluptatibus cupiditate recusandae eos magni sapiente vitae. Voluptatibus, laborum tempora.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                             DOmanda2
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsam, iusto soluta blanditiis reprehenderit, numquam nihil itaque culpa ratione excepturi veritatis quisquam commodi architecto rem, dignissimos impedit consectetur vitae. Sed?
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            domanda3
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsam suscipit, eveniet consequatur debitis fugiat. Iure necessitatibus deleniti quisquam? Temporibus, voluptatibus necessitatibus ullam repellat fuga perferendis laborum rem voluptates et?
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4 col-destra">
@@ -277,14 +348,17 @@
                                 </div>
                                 <div class="card graphic-card">
                                     <img src="img/stats.jpeg" alt="">
+                                    <!-- boostrap -->
                                     <ul class="list-group">
                                         <li class="list-group-item">
                                             <h3>utenti attivi</h3>
-                                            <div>lista utenti attivi</div>
+                                            <div>lista utenti attivi negli ultimi mesi</div>
                                         </li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                        <li class="list-group-item">A fourth item</li>
+                                        <li class="list-group-item">marzo</li>
+                                        <li class="list-group-item">aprile</li>
+                                        <li class="list-group-item">maggio</li>
+                                        <a class="linkgrafico" href="#" class="card-link">visualizza report piu approfondito</a>
+                                       
                                     </ul>
                                 </div>
                             </div>
@@ -292,6 +366,10 @@
                     </div>  <!-- chiusura mian content -->                
                 </div>  <!-- chiusura wrap up -->    
             </div>  <!-- chiusura general container -->
+
+            <!-- js" -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
         </main>
 
     </body>
